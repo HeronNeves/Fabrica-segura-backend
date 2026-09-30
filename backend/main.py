@@ -5,7 +5,9 @@ from fastapi.security import APIKeyHeader
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from sqlalchemy import func
-import models, schemas, database
+from backend.models import models
+from backend.schemas import  schemas
+from backend.database import database
 
 models.Base.metadata.create_all(bind=database.engine)
 
