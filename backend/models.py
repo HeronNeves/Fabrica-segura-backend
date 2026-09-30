@@ -1,6 +1,6 @@
 from sqlalchemy import Column, Integer, Float, Boolean, String, DateTime
 from sqlalchemy.sql import func
-from database import Base
+from backend.database import Base
 
 class LeituraSensor(Base):
     __tablename__ = "leituras_sensores"
